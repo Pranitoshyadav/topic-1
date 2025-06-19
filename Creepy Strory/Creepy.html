@@ -3,41 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creepy Story</title>
-</head>
-<body>
+    <title>My hobbies</title>
     <style>
-        body.dark{
-            color: white;
-            background: black;
-        }
         button{
-            display: block;
             margin: 5px;
+            padding: 5px;
+            background: lightblue;
         }
-        .txetEntry{
-            margin-top: 12px;
-            margin-bottom: 15px;
+        body{
+            background: lightgreen;
+            text-decoration: underline;
+            border-bottom: 2px solid black;
         }
     </style>
-    <h1>The Basement</h1>
-    <p id="story">I wanted to find my friend,and he was hiding in the Basement</p>
-    <button onclick="goDark()">get in the Mood</button>
-    <div class="textEnty=">Type your name here, if you dare <input type="text" id="mane"></div>
-    <button onclick="typeAndScreem()">Please please don't click me</button>
-    <button onclick="finishtheStory()">Tell me what happned!</button>
-    <audio id="audio" src="http://reboot-me.com/ouch.mp3" type="audio/mpeg"></audio>
+</head>
+<body>
+    <h1>My Hobbies</h1>
+    <p id="Hobbies">Click on the button and see what I say</p>
+    <button onclick="showMyHobbies()">Click on me to find out Pranitosh Yadav's hobbied</button>
     <script>
-        function typeAndScreem(){
-            document.getElementById("audio").play();
-        }
-        var peronName=document.getElementById("audio").value;
-        alert("I told you not to do that"+PersonName);
-        function goDark(){
-            document.body.className="dark";
-        }
-        function finishtheStory(){
-            document.getElementById("story").innerHTML="So I carefully serched the damp dungeon. There you are!";
+        function showMyHobbies(){
+            document.getElementById("Hobbies").innerHTML="I like to code, read and draw";
         }
     </script>
 </body>
