@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creepy Story</title>
+</head>
+<body>
+    <style>
+        body.dark{
+            color: white;
+            background: black;
+        }
+        button{
+            display: block;
+            margin: 5px;
+        }
+        .txetEntry{
+            margin-top: 12px;
+            margin-bottom: 15px;
+        }
+    </style>
+    <h1>The Basement</h1>
+    <p id="story">I wanted to find my friend,and he was hiding in the Basement</p>
+    <button onclick="goDark()">get in the Mood</button>
+    <div class="textEnty=">Type your name here, if you dare <input type="text" id="mane"></div>
+    <button onclick="typeAndScreem()">Please please don't click me</button>
+    <button onclick="finishtheStory()">Tell me what happned!</button>
+    <audio id="audio" src="http://reboot-me.com/ouch.mp3" type="audio/mpeg"></audio>
+    <script>
+        function typeAndScreem(){
+            document.getElementById("audio").play();
+        }
+        var peronName=document.getElementById("audio").value;
+        alert("I told you not to do that"+PersonName);
+        function goDark(){
+            document.body.className="dark";
+        }
+        function finishtheStory(){
+            document.getElementById("story").innerHTML="So I carefully serched the damp dungeon. There you are!";
+        }
+    </script>
+</body>
+</html>
